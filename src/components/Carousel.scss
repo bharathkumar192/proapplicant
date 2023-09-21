@@ -1,0 +1,21 @@
+.car{.rec.rec-arrow{
+    background-color: white;
+    color: black;
+    outline: none;
+}}
+.car{.rec.rec-arrow:hover{
+    background-color: black;
+    color: white;
+    outline: none;
+}}
+.car{.rec.rec-arrow:disabled{
+    color: rgb(239, 230, 230);
+    background-color: white;
+    outline: none;
+}}
+.car{.rec.rec-arrow:disabled:hover{
+    color: rgb(239, 230, 230);
+    background-color: white;
+    outline: none;
+}
+}

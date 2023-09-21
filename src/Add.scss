@@ -1,0 +1,36 @@
+
+.form-add {
+  margin: 1rem;
+  // flex-grow: 1;
+  width: fit-content;
+  .line {
+    margin: 3rem;
+    p {
+      color: #1c3144;
+      font-weight: 700;
+      i {
+        margin: 0 1rem 0 0;
+      }
+    }
+    input,
+    select {
+      background-color: #f8f9fa;
+      margin: 0.75rem 0;
+      padding: 0.5rem 2rem;
+      &::placeholder {
+        color: #d1d1d6;
+      }
+      &:focus {
+        border: 1px solid #329f5b;
+      }
+      border-radius: 5rem;
+    }
+    input {
+      width: 666px;
+    }
+    select {
+      margin: 1rem 1rem 1rem 0;
+      width: 318px;
+    }
+  }
+}

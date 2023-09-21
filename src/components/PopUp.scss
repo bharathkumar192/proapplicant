@@ -1,0 +1,81 @@
+.pop {
+  input {
+    border-radius: 1rem;
+    min-width: 200px;
+    border: 1px solid black;
+    padding: 0.5rem 1rem;
+    color: black;
+    &:focus {
+      border-color: black;
+    }
+  }
+  input[type="checkbox"] {
+    border-radius: 4px;
+    width: 1rem;
+    height: 1rem;
+    background-size: 1rem;
+    padding: 0.5rem;
+    color: #61a5cb;
+  }
+  label {
+    margin: 0 1rem;
+  }
+  select {
+    border: 1px solid black;
+    color: black;
+    &:focus {
+      border-color: black;
+    }
+  }
+}
+
+.popup {
+  background-color: #eef0f2;
+  position: absolute;
+  top: calc(100% + 25px);
+  border-radius: 0.5rem;
+  left: 0;
+  box-shadow: 1px 1px 5px #000;
+  z-index: 5;
+  padding: 1rem 2rem 4rem;
+  display: block;
+  &.right::after {
+    right: 0;
+    left: auto;
+  }
+  &::after {
+    position: absolute !important;
+    border-bottom: 30px solid #eef0f2;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    content: "";
+    top: -26px;
+    left: 0;
+    background-image: linear-gradient(45deg, #eef0f2 50%, transparent 50%);
+  }
+  .button {
+    color: white;
+    margin-top: 2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: pointer;
+    background-color: #262490;
+    padding: 0.75rem 2rem;
+    border-radius: 0.25rem;
+    outline: none;
+    border: none;
+    bottom: 0.5rem;
+  }
+  select {
+    border: 1px solid black;
+    color: black;
+    &:focus {
+      border-color: black;
+    }
+  }
+}
+
+.input-with-hint {
+  font-size: 1em;
+}

@@ -1,0 +1,40 @@
+.newUser {
+  select {
+    padding: 0.5rem 1.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #bbb;
+    outline: none;
+    width: 15rem;
+  }
+}
+
+.ban {
+  background-color: #e73943;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  color: white;
+}
+
+.addUser {
+  margin: 0 2rem;
+  padding: 1rem 2rem;
+}
+
+.bottom {
+  background-color: black;
+  color: white;
+  position: fixed;
+  bottom: 2rem;
+  left: 1rem;
+}
+
+.revoke {
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 999px;
+  background-color: rgb(250, 86, 86);
+}

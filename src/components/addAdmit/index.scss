@@ -1,0 +1,305 @@
+#addForm {
+  font-family: "Poppins";
+  min-height: 100vh;
+  padding: 1rem;
+  background-color: #f7f7ff;
+  .line {
+    input,
+    select {
+      padding: 1rem 2rem;
+    }
+  }
+  .preForm {
+    margin: 1rem 3rem 0;
+    p {
+      color: #b3aeae;
+    }
+    .title {
+      color: #1c3144;
+      font-size: 28px;
+      font-weight: 700;
+    }
+    .divider {
+      margin: 1rem 0;
+    }
+  }
+  .formArea {
+    flex-grow: 0.8;
+  }
+  .header {
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .content {
+      //   flex: 4;
+      max-width: min(900px, 80vw);
+      min-width: 17rem;
+      .title {
+        margin: 1rem 0;
+        color: #1c3144;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: capitalize;
+      }
+      .desc {
+        color: #999dad;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 700;
+      }
+    }
+    img {
+      //   flex: 1;
+      width: 30rem;
+    }
+  }
+  .divider {
+    height: 1px;
+    margin: 1rem 4rem;
+    background-color: #d1d1d6;
+  }
+  .add {
+    display: flex;
+    margin: 1rem 0 0;
+    .left {
+      border-right: 1px solid black;
+      height: inherit;
+      text-align: right;
+      width: fit-content;
+      padding: 2rem 4rem 2rem;
+      display: flex;
+      gap: 2rem;
+      align-items: center;
+      .t {
+        gap: 5rem;
+      }
+      .categories {
+        display: flex;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .category {
+          cursor: pointer;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 0.5rem;
+          .text {
+            width: 15rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            .step {
+              font-size: 12px;
+              text-transform: uppercase;
+              color: #b3aeae;
+            }
+            .step_desc {
+              color: #1c3144;
+              font-weight: 700;
+              font-size: 20px;
+            }
+          }
+        }
+        .icon {
+          width: 3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 3rem;
+          border-radius: 999px;
+          position: relative;
+          background-color: #d4d3d9;
+          &::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            transform: translate(6px, -50%);
+            width: 0.75rem;
+            right: -4rem;
+            border-radius: 2rem;
+            background-color: inherit;
+            height: 0.75rem;
+          }
+        }
+        .connect {
+          width: 1px;
+          height: 5rem;
+          background-color: #1c3144;
+        }
+      }
+    }
+  }
+}
+.goBack {
+  position: fixed;
+  top: 3rem;
+  right: 2rem;
+  background-color: #329f5b;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.form-add {
+  padding: 1rem 1rem 5rem;
+  width: 100%;
+  position: relative;
+  .buttons {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    position: absolute;
+    bottom: 0rem;
+    right: 0;
+    .prevBtn {
+      display: flex;
+      font-size: 1.15rem;
+      &:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+      gap: 1rem;
+      align-items: center;
+      i {
+        scale: 0.75;
+      }
+      text-decoration: underline;
+    }
+  }
+  .addUnis {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    .del {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 2rem;
+      height: 2rem;
+      border-radius: 999px;
+      background-color: #fcbcbc;
+      color: #bd0000;
+    }
+    input {
+      width: 20rem;
+    }
+  }
+  .addBtn {
+    color: #329f5b;
+    font-weight: 500;
+    cursor: pointer;
+    margin: 1rem 0;
+  }
+  .engRadio {
+    display: flex;
+    gap: 1rem;
+    margin: 1rem 0;
+    width: 145px;
+    align-items: center;
+    padding: 0.25rem;
+    border-radius: 2rem;
+    border: 1px solid black;
+    &.ielts_active {
+      border: 1px solid #329f5b;
+      .circle {
+        background-color: #329f5b;
+      }
+    }
+    &.toefl_active {
+      border: 1px solid #4f8bff;
+      .circle {
+        background-color: #4f8bff;
+      }
+    }
+    p {
+      text-transform: uppercase;
+    }
+    .circle {
+      background-color: #dfdfdf;
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: 999px;
+    }
+  }
+  .inputs {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+    .vertical {
+      .scale {
+        width: 10rem;
+        text-align: center;
+        padding: 1rem;
+        font-size: 12px;
+        border-radius: 2rem;
+        &.white {
+          background-color: white;
+          border: 1px solid #999;
+        }
+        &.purple {
+          background-color: #f2d6ff;
+          color: #b81fff;
+        }
+        &.blue {
+          background-color: #c8f5f9;
+          color: #16bbca;
+        }
+        &.orange {
+          background-color: #ffe7d6;
+          color: #ff700a;
+        }
+      }
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 1rem 0;
+      p {
+        color: #696969;
+      }
+      .parent {
+        position: relative;
+        .outOf {
+          position: absolute;
+          color: #d1d1d6;
+          top: 50%;
+          font-weight: normal;
+          transform: translateY(-50%);
+          font-size: 0.75rem;
+          right: 1rem;
+        }
+      }
+      input {
+        margin: 0;
+        width: 10rem;
+        &::-webkit-outer-spin-button,
+        &::-webkit-inner-spin-button {
+          -webkit-appearance: none;
+          margin: 0;
+        }
+      }
+    }
+  }
+
+  button {
+    width: 165px;
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    background-color: #329f5b;
+    color: white;
+    font-weight: 700;
+    border-radius: 3rem;
+  }
+}

@@ -1,0 +1,199 @@
+.top {
+  position: relative;
+  height: 45vh;
+  justify-content: space-between;
+  background-color: #0f1217;
+  color: white;
+  padding: 2rem 6rem;
+  display: flex;
+  align-items: center;
+  .label {
+    color: #4b4c50;
+  }
+  .customerDetails {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    // margin: 0 10%;
+    gap: 3rem;
+    .row {
+      display: flex;
+      gap: 2rem;
+      justify-content: flex-start;
+      .content {
+        font-size: 1.25rem;
+        text-transform: none;
+      }
+    }
+    .column {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+  }
+  .edit {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+    padding: 1rem;
+    border-radius: 999px;
+    background-color: #c3c3c316;
+  }
+  .basicInfo {
+    .head {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin: 0 0 2rem 0;
+    }
+    .row {
+      align-items: center;
+      display: flex;
+      gap: 1rem;
+    }
+  }
+  p {
+    color: white;
+  }
+}
+
+.circle {
+  width: 3rem;
+  height: 3rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 999px;
+  background-color: #7a2525;
+}
+
+.details {
+  font-family: "Poppins";
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 2rem 3rem;
+  gap: 3rem;
+  .sub-section {
+    flex: 4;
+    .subscriptions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      .sub,
+      .none {
+        box-shadow: 0px 0px 20px #c3c3c3;
+        padding: 1rem;
+        border-radius: 0.5rem;
+      }
+      .none {
+        width: 100%;
+      }
+      .sub {
+        width: calc(50% - 2rem);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .tool-name {
+          font-weight: 700;
+          margin: 0 1rem 2rem;
+        }
+        p {
+          margin: 0 1rem;
+        }
+        background-image: linear-gradient(to right, #eecda3, #ef629f);
+        .paid {
+          padding: 1rem 2rem;
+          border-radius: 0.5rem;
+          background-color: #ffefae;
+          color: #c39f03;
+        }
+        .free {
+          padding: 1rem 2rem;
+          border-radius: 0.5rem;
+          background-color: #98ffcc;
+          color: #037039;
+        }
+      }
+    }
+  }
+  .refSection {
+    flex: 1;
+    .referrals {
+      display: flex;
+      background-color: white;
+      flex-direction: column;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      box-shadow: 0px 0px 20px #c3c3c3;
+      .referral {
+        padding: 1rem;
+        background-color: white;
+        .circle {
+          &.small {
+            color: white;
+            font-size: 0.8rem;
+            width: 2.5rem;
+            height: 2.5rem;
+          }
+        }
+        .row {
+          gap: 1rem;
+          align-items: center;
+          display: flex;
+        }
+      }
+    }
+  }
+  .section-title {
+    font-size: 1.25rem;
+    color: #292929;
+    font-weight: 700;
+    margin: 0 0 2rem;
+  }
+}
+
+.form-smart {
+  display: flex;
+  flex-direction: column;
+  form {
+    position: relative;
+    .x {
+      width: 2rem;
+      height: 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ff4848;
+    }
+    button {
+      background-color: #e75353;
+      padding: 0.75rem 1.5rem;
+      color: white;
+      border: 0px solid black;
+      outline: none;
+      border-radius: 0.5rem;
+    }
+    background-color: #4b4c50;
+    padding: 2rem;
+    border-radius: 0.5rem;
+  }
+  .line {
+    display: flex;
+    gap: 2rem;
+    margin: 1rem 0;
+    align-items: center;
+    input {
+      border-radius: 0.5rem;
+    }
+    p {
+      width: 10rem;
+    }
+  }
+  gap: 2rem;
+  p {
+    color: white;
+  }
+  background-color: #00000064;
+}
